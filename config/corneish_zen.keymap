@@ -20,8 +20,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            label = "QWERTY";
+        base {
+            label = "COLEMAK";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
