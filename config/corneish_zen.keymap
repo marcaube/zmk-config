@@ -30,11 +30,22 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp undefined  &kp Q  &kp W    &kp F      &kp P    &kp B      &kp J          &kp L       &kp U    &kp Y  &kp SINGLE_QUOTE  &kp undefined
-&kp undefined  &kp A  &kp R    &kp S      &kp T    &kp G      &kp M          &kp N       &kp E    &kp I             &kp O  &kp undefined
-&kp undefined  &kp Z  &kp X    &kp C      &kp D    &kp V      &kp K          &kp H   &kp COMMA  &kp DOT          &kp FSLH  &kp undefined
-                             &kp ESC  &kp SPACE  &kp TAB    &kp RET  &kp BACKSPACE  &kp DELETE
+&none               &kp Q            &kp W           &kp F             &kp P    &kp B      &kp J             &kp L           &kp U              &kp Y    &kp SINGLE_QUOTE  &none
+&none  &mt A LEFT_CONTROL   &mt R LEFT_ALT  &mt S LEFT_GUI  &mt T LEFT_SHIFT    &kp G      &kp M  &mt N LEFT_SHIFT  &mt E LEFT_GUI     &mt I LEFT_ALT  &mt O LEFT_CONTROL  &none
+&none               &kp Z  &mt X RIGHT_ALT           &kp C             &kp D    &kp V      &kp K             &kp H       &kp COMMA  &mt DOT RIGHT_ALT            &kp FSLH  &none
+                                                   &kp ESC       &lt 1 SPACE  &kp TAB    &kp RET     &kp BACKSPACE      &kp DELETE
             >;
+        };
+
+        nav {
+            bindings = <
+&none             &none          &none         &none           &none  &none        &none          &none       &none      &none     &none  &none
+&none  &kp LEFT_CONTROL   &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &none     &kp LEFT       &kp DOWN      &kp UP  &kp RIGHT  &kp CAPS  &none
+&none             &none  &kp RIGHT_ALT         &none           &none  &none     &kp HOME      &kp PG_DN   &kp PG_UP    &kp END   &kp INS  &none
+                                               &none           &none  &none    &kp ENTER  &kp BACKSPACE  &kp DELETE
+            >;
+
+            label = "Navigation";
         };
     };
 };
