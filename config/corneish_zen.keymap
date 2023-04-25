@@ -3,9 +3,9 @@
 
 / {
     chosen {
-        zmk,matrix_transform = &default_transform;
+        //zmk,matrix_transform = &default_transform;
 
-        //zmk,matrix_transform = &five_column_transform;
+        zmk,matrix_transform = &five_column_transform;
     };
 };
 
@@ -17,10 +17,10 @@
             label = "COLEMAK";
 
             bindings = <
-&none        &kp Q           &kp W       &kp F         &kp P    &kp B      &kp J          &kp L       &kp U         &kp Y  &kp SINGLE_QUOTE  &none
-&none  &mt LCTRL A  &mt LEFT_ALT R  &mt LGUI S  &mt LSHIFT T    &kp G      &kp M   &mt LSHIFT N  &mt LGUI E    &mt LALT I       &mt LCTRL O  &none
-&none        &kp Z      &mt RALT X       &kp C         &kp D    &kp V      &kp K          &kp H   &kp COMMA  &mt RALT DOT          &kp FSLH  &none
-                                       &kp ESC   &lt 1 SPACE  &kp TAB    &kp RET  &kp BACKSPACE  &kp DELETE
+      &kp Q           &kp W       &kp F         &kp P    &kp B      &kp J          &kp L       &kp U         &kp Y  &kp SINGLE_QUOTE
+&mt LCTRL A  &mt LEFT_ALT R  &mt LGUI S  &mt LSHIFT T    &kp G      &kp M   &mt LSHIFT N  &mt LGUI E    &mt LALT I       &mt LCTRL O
+      &kp Z      &mt RALT X       &kp C         &kp D    &kp V      &kp K          &kp H   &kp COMMA  &mt RALT DOT          &kp FSLH
+                                  &kp ESC   &lt 1 SPACE  &kp TAB    &kp RET  &kp BACKSPACE  &kp DELETE
             >;
         };
 
@@ -28,10 +28,10 @@
             label = "Navigation";
 
             bindings = <
-&none             &none          &none         &none           &none  &none        &none          &none       &none      &none     &none  &none
-&none  &kp LEFT_CONTROL   &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &none     &kp LEFT       &kp DOWN      &kp UP  &kp RIGHT  &kp CAPS  &none
-&none             &none  &kp RIGHT_ALT         &none           &none  &none     &kp HOME      &kp PG_DN   &kp PG_UP    &kp END   &kp INS  &none
-                                               &none           &none  &none    &kp ENTER  &kp BACKSPACE  &kp DELETE
+    &none          &none         &none           &none  &none        &none          &none       &none      &none     &none
+&kp LEFT_CONTROL   &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &none     &kp LEFT       &kp DOWN      &kp UP  &kp RIGHT  &kp CAPS
+            &none  &kp RIGHT_ALT         &none           &none  &none     &kp HOME      &kp PG_DN   &kp PG_UP    &kp END   &kp INS
+                                     &none           &none  &none    &kp ENTER  &kp BACKSPACE  &kp DELETE
             >;
         };
     };
