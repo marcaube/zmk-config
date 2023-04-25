@@ -1,10 +1,3 @@
-/*
-*
-* Copyright (c) 2021 Darryl deHaan
-* SPDX-License-Identifier: MIT
-*
-*/
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
@@ -23,12 +16,6 @@
         base {
             label = "COLEMAK";
 
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
             bindings = <
 &none        &kp Q           &kp W       &kp F         &kp P    &kp B      &kp J          &kp L       &kp U         &kp Y  &kp SINGLE_QUOTE  &none
 &none  &mt LCTRL A  &mt LEFT_ALT R  &mt LGUI S  &mt LSHIFT T    &kp G      &kp M   &mt LSHIFT N  &mt LGUI E    &mt LALT I       &mt LCTRL O  &none
@@ -38,14 +25,14 @@
         };
 
         nav {
+            label = "Navigation";
+
             bindings = <
 &none             &none          &none         &none           &none  &none        &none          &none       &none      &none     &none  &none
 &none  &kp LEFT_CONTROL   &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &none     &kp LEFT       &kp DOWN      &kp UP  &kp RIGHT  &kp CAPS  &none
 &none             &none  &kp RIGHT_ALT         &none           &none  &none     &kp HOME      &kp PG_DN   &kp PG_UP    &kp END   &kp INS  &none
                                                &none           &none  &none    &kp ENTER  &kp BACKSPACE  &kp DELETE
             >;
-
-            label = "Navigation";
         };
     };
 };
