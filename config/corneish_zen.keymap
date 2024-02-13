@@ -11,16 +11,40 @@
 };
 
 / {
+    behaviors {
+        hrm_left: hrm_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_LEFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <5 6 7 8 9 19 18 17 16 15 25 26 27 28 29 33 34 35>;
+        };
+
+        hrm_right: hrm_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <0 10 20 21 11 1 2 3 4 11 12 13 14 21 22 23 24 30 31 32>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             label = "COLEMAK";
             bindings = <
-  &kp Q        &kp W           &kp F       &kp P         &kp B      &kp J        &kp L            &kp U         &kp Y         &kp SINGLE_QUOTE
-  &mt LCTRL A  &mt LEFT_ALT R  &mt LGUI S  &mt LSHIFT T  &kp G      &kp M        &mt LSHIFT N     &mt LGUI E    &mt LALT I    &mt LCTRL O
-  &kp Z        &mt RALT X      &kp C       &kp D         &kp V      &kp K        &kp H            &kp COMMA     &mt RALT DOT  &kp FSLH
-                               &lt 2 ESC   &lt 1 SPACE   &kp TAB    &lt 4 ENTER  &lt 3 BACKSPACE  &lt 5 DELETE
+  &kp Q              &kp W                 &kp F             &kp P               &kp B      &kp J        &kp L            &kp U         &kp Y         &kp SINGLE_QUOTE
+  &hrm_left LCTRL A  &hrm_left LEFT_ALT R  &hrm_left LGUI S  &hrm_left LSHIFT T  &kp G      &kp M        &mt LSHIFT N     &mt LGUI E    &mt LALT I    &mt LCTRL O
+  &kp Z              &hrm_left RALT X      &kp C             &kp D               &kp V      &kp K        &kp H            &kp COMMA     &mt RALT DOT  &kp FSLH
+                                           &lt 2 ESC         &lt 1 SPACE         &kp TAB    &lt 4 ENTER  &lt 3 BACKSPACE  &lt 5 DELETE
             >;
         };
 
