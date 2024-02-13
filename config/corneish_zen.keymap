@@ -41,10 +41,10 @@
         base {
             label = "COLEMAK";
             bindings = <
-  &kp Q              &kp W                 &kp F             &kp P               &kp B      &kp J        &kp L            &kp U         &kp Y         &kp SINGLE_QUOTE
-  &hrm_left LCTRL A  &hrm_left LEFT_ALT R  &hrm_left LGUI S  &hrm_left LSHIFT T  &kp G      &kp M        &mt LSHIFT N     &mt LGUI E    &mt LALT I    &mt LCTRL O
-  &kp Z              &hrm_left RALT X      &kp C             &kp D               &kp V      &kp K        &kp H            &kp COMMA     &mt RALT DOT  &kp FSLH
-                                           &lt 2 ESC         &lt 1 SPACE         &kp TAB    &lt 4 ENTER  &lt 3 BACKSPACE  &lt 5 DELETE
+  &kp Q              &kp W                 &kp F             &kp P               &kp B      &kp J        &kp L               &kp U              &kp Y                  &kp SINGLE_QUOTE
+  &hrm_left LCTRL A  &hrm_left LEFT_ALT R  &hrm_left LGUI S  &hrm_left LSHIFT T  &kp G      &kp M        &hrm_right LSHFT N  &hrm_right LGUI E  &hrm_right LALT I      &hrm_right LEFT_CONTROL O
+  &kp Z              &hrm_left RALT X      &kp C             &kp D               &kp V      &kp K        &kp H               &kp COMMA          &hrm_left RALT PERIOD  &kp FSLH
+                                           &lt 2 ESC         &lt 1 SPACE         &kp TAB    &lt 4 ENTER  &lt 3 BACKSPACE     &lt 5 DELETE
             >;
         };
 
