@@ -90,7 +90,7 @@
         base {
             label = "COLEMAK";
             bindings = <
-  &kp Q                   &kp W                 &kp F             &kp P               &kp B      &kp J        &kp L               &kp U              &kp Y                  &kp SINGLE_QUOTE
+  &mt LS(LA(LCTRL)) Q     &kp W                 &kp F             &kp P               &kp B      &kp J        &kp L               &kp U              &kp Y                  &mt LS(LA(LCTRL)) SQT
   &hrm_left LCTRL A       &hrm_left LEFT_ALT R  &hrm_left LGUI S  &hrm_left LSHIFT T  &kp G      &kp M        &hrm_right LSHFT N  &hrm_right LGUI E  &hrm_right LALT I      &hrm_right LEFT_CONTROL O
   &mt LS(LA(LC(LGUI))) Z  &hrm_left RALT X      &kp C             &kp D               &kp V      &kp K        &kp H               &kp COMMA          &hrm_left RALT PERIOD  &mt LS(LA(LC(LGUI))) SLASH
                                                 &lt 2 ESC         &lt 1 SPACE         &kp TAB    &lt 4 ENTER  &lt 3 BACKSPACE     &lt 5 DELETE
